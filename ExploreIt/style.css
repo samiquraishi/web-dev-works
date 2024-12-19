@@ -1,0 +1,341 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    height: 100%; /* Makes the page take full height of the viewport */
+    margin: 0; /* Remove default margin */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+  }
+  
+  body {
+    font-family: 'Poppins', Arial, sans-serif;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #F5F5F5;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .container {
+    flex: 1;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: linear-gradient(90deg, #1E88E5, #00ACC1);
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white; /* Default color for light theme */
+  }
+  
+  .header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .header-buttons button {
+    padding: 0.5rem 1rem;
+    background-color: #00ACC1;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .header-buttons button:hover {
+    background-color: #00838F;
+    transform: scale(1.05);
+  }
+  
+  .header-buttons #theme-toggler {
+    padding: 0.5rem 1rem;
+    border: 2px solid white;
+    border-radius: 1rem;
+    background: transparent;
+    cursor: pointer;
+    font-size: 1rem;
+    color: white;
+    transition: all 0.3s ease;
+  }
+  
+  /* Search Form */
+  .search-form {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .search-form input {
+    padding: 0.75rem 1rem;
+    font-size: 1.2rem;
+    border: 1.2px solid #CCC;
+    border-radius: 1.8rem;
+    flex: 1;
+    transition: border-color 0.3s ease;
+  }
+  
+  .search-form input:focus {
+    border-color: #1E88E5;
+    outline: none;
+  }
+  
+  .search-form button {
+    padding: 1.2rem 1.2rem;
+    font-size: 1.2rem;
+    background-color: #1E88E5;
+    color: white;
+    border: none;
+    border-radius: 1.8rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .search-form button:hover {
+    background-color: #1565C0;
+    transform: scale(1.05);
+  }
+
+ /* Results Grid */
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .result-item {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .result-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .result-item h3 {
+    margin: 0 0 0.4rem;
+    font-size: 1.0rem;
+  }
+  
+  .result-item p {
+    margin: 0.4rem 0;
+    font-size: 0.9rem;
+  }
+  
+  .result-item a {
+    color: #0074d9;
+    text-decoration: none;
+  }
+  
+  .result-item a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Spinner */
+  .spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    height: 10rem;
+  }
+  
+  
+  
+  /* Recommendations Section */
+.recommendations {
+    margin: 2rem 0;
+    text-align: center;
+  }
+  
+  .recommendations h2 {
+    font-size: 1.5rem; /* Reduced size for a compact heading */
+    margin-bottom: 0.8rem;
+  }
+  
+  #recommendations-list {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem; /* Reduced gap for a tighter layout */
+    flex-wrap: wrap;
+  }
+  
+  .recommendation-item {
+    background: white;
+    padding: 0.8rem; /* Reduced padding */
+    border: 1px solid #DDD;
+    border-radius: 0.4rem; /* Slightly smaller radius */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+    transition: all 0.3s ease;
+    font-size: 0.9rem; /* Reduced font size for compactness */
+  }
+  
+  .recommendation-item:hover {
+    transform: scale(1.03); /* Subtle hover effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Slightly less intense hover shadow */
+  }
+  
+  .recommendation-item a {
+    color: #1E88E5;
+    text-decoration: none;
+    font-size: 1rem; /* Adjusted font size for links */
+  }
+  
+  .recommendation-item a:hover {
+    text-decoration: underline;
+  }
+  
+  #refresh-recommendations {
+    margin-top: 0.8rem; /* Reduced margin */
+    padding: 0.6rem 1rem; /* Smaller padding */
+    font-size: 1rem; /* Reduced font size */
+    font-weight: 500;
+    background-color: #1E88E5;
+    color: white;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  #refresh-recommendations:hover {
+    background-color: #1565C0;
+    transform: scale(1.03); /* Subtle hover scaling */
+  }
+
+  /* Bottom Bar */
+  .bottom-bar {
+    background-color: #f5f5f5; /* Light theme background */
+    color: #333; /* Light theme text color */
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    margin-top: auto;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .bottom-bar a {
+    color: #1e88e5; /* Link color */
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .bottom-bar a:hover {
+    text-decoration: underline;
+  }
+
+
+
+  
+  /* Dark Theme */
+  body.dark-theme {
+    background-color: #121212;
+    color: #FFF;
+  }
+  
+  body.dark-theme .navbar {
+    background: linear-gradient(90deg, #1B1B1B, #333333);
+  }
+
+  body.dark-theme .navbar .logo {
+    color: #00E5FF; /* Bright teal for dark mode */
+  }
+  
+  body.dark-theme .header-buttons button {
+    background-color: #3f3f3f;
+  }
+  
+  body.dark-theme .search-form input {
+    background-color: #333;
+    color: #FFF;
+    border-color: #444;
+  }
+
+  body.dark-theme .search-form input:focus {
+    border-color: #00E5FF;
+    outline: none;
+  }  
+
+  body.dark-theme .search-form button {
+    background-color: #00E5FF; /* Bright teal for dark theme */
+    color: #121212; /* Dark text for contrast */
+  }
+  
+  body.dark-theme .search-form button:hover {
+    background-color: #00B8D4; /* Darker teal on hover */
+  }
+
+  body.dark-theme #search-results .result-item {
+    background-color: #1f1f1f;
+    color: #fff;
+    border-color: #2e2e2e;
+  }
+  
+  body.dark-theme .result-item a {
+    color: #00E5FF;
+  }
+  
+  body.dark-theme .result-item:hover {
+    box-shadow: 0 6px 6px rgba(50, 50, 50, 0.2);
+  }
+  
+  body.dark-theme .recommendation-item {
+    background-color: #1a1a1a;
+    color: #FFF;
+    border-color: #2e2e2e;
+  }
+  
+  body.dark-theme .recommendation-item a {
+    color: #00E5FF;
+  }
+  
+  body.dark-theme #refresh-recommendations {
+    background-color: #2a2a2a;
+    color: #FFF;
+  }
+  
+  body.dark-theme #refresh-recommendations:hover {
+    background-color: #2f2f2f;
+  }
+
+  body.dark-theme .bottom-bar {
+    background-color: #141414; /* Dark theme background */
+    color: #fff; /* Dark theme text color */
+  }
+  
+  body.dark-theme .bottom-bar a {
+    color: #00e5ff; /* Link color in dark theme */
+  }
+  
+  

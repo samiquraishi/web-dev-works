@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ExploreIt</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">ExploreIt</div>
+    <div class="header-buttons">
+      <button id="login-btn">Login</button>
+      <button id="signup-btn">Sign Up</button>
+      <div id="theme-toggler">Light</div>
+    </div>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container">
+    <!-- Search Form -->
+    <form id="search-form" class="search-form">
+      <input type="text" id="search-input" placeholder="Search" />
+      <button type="submit"><i class="fas fa-search"></i></button>
+    </form>
+
+    <!-- Recomendations section -->
+    <div class="recommendations">
+        <h2>Explore Topics</h2>
+        <div id="recommendations-list"></div>
+        <button id="refresh-recommendations">Refresh Topics</button>
+    </div>      
+
+    <!-- Search Results -->
+    <div id="search-results" class="results-grid"></div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <footer class="bottom-bar">
+    <p>Thanks for visiting ExploreIt !</p>
+    <p>Powered by the <a href="https://www.mediawiki.org/wiki/API:Main_page" target="_blank">Wikipedia API</a></p>
+  </footer>
+  
+
+  <script src="app.js"></script>
+</body>
+</html>
