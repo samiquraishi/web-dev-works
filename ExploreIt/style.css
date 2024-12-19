@@ -1,13 +1,13 @@
-/* General Reset */
+
 * {
     box-sizing: border-box;
   }
 
   html, body {
-    height: 100%; /* Makes the page take full height of the viewport */
-    margin: 0; /* Remove default margin */
+    height: 100%;
+    margin: 0; 
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column; 
   }
   
   body {
@@ -26,7 +26,6 @@
     padding: 1rem;
   }
   
-  /* Navbar */
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -40,7 +39,7 @@
   .navbar .logo {
     font-size: 1.8rem;
     font-weight: bold;
-    color: white; /* Default color for light theme */
+    color: white; 
   }
   
   .header-buttons {
@@ -77,7 +76,6 @@
     transition: all 0.3s ease;
   }
   
-  /* Search Form */
   .search-form {
     display: flex;
     justify-content: center;
@@ -120,7 +118,6 @@
     transform: scale(1.05);
   }
 
- /* Results Grid */
 .results-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -160,7 +157,6 @@
     text-decoration: underline;
   }
   
-  /* Spinner */
   .spinner {
     display: flex;
     justify-content: center;
@@ -169,45 +165,42 @@
     height: 10rem;
   }
   
-  
-  
-  /* Recommendations Section */
 .recommendations {
     margin: 2rem 0;
     text-align: center;
   }
   
   .recommendations h2 {
-    font-size: 1.5rem; /* Reduced size for a compact heading */
+    font-size: 1.5rem; 
     margin-bottom: 0.8rem;
   }
   
   #recommendations-list {
     display: flex;
     justify-content: center;
-    gap: 0.8rem; /* Reduced gap for a tighter layout */
+    gap: 0.8rem; 
     flex-wrap: wrap;
   }
   
   .recommendation-item {
     background: white;
-    padding: 0.8rem; /* Reduced padding */
+    padding: 0.8rem; 
     border: 1px solid #DDD;
-    border-radius: 0.4rem; /* Slightly smaller radius */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+    border-radius: 0.4rem; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
     transition: all 0.3s ease;
-    font-size: 0.9rem; /* Reduced font size for compactness */
+    font-size: 0.9rem; 
   }
   
   .recommendation-item:hover {
-    transform: scale(1.03); /* Subtle hover effect */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Slightly less intense hover shadow */
+    transform: scale(1.03); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); 
   }
   
   .recommendation-item a {
     color: #1E88E5;
     text-decoration: none;
-    font-size: 1rem; /* Adjusted font size for links */
+    font-size: 1rem; 
   }
   
   .recommendation-item a:hover {
@@ -215,9 +208,9 @@
   }
   
   #refresh-recommendations {
-    margin-top: 0.8rem; /* Reduced margin */
-    padding: 0.6rem 1rem; /* Smaller padding */
-    font-size: 1rem; /* Reduced font size */
+    margin-top: 0.8rem; 
+    padding: 0.6rem 1rem; 
+    font-size: 1rem; 
     font-weight: 500;
     background-color: #1E88E5;
     color: white;
@@ -230,13 +223,12 @@
   
   #refresh-recommendations:hover {
     background-color: #1565C0;
-    transform: scale(1.03); /* Subtle hover scaling */
+    transform: scale(1.03); 
   }
 
-  /* Bottom Bar */
   .bottom-bar {
-    background-color: #f5f5f5; /* Light theme background */
-    color: #333; /* Light theme text color */
+    background-color: #f5f5f5; 
+    color: #333; 
     text-align: center;
     padding: 1rem 0;
     font-size: 0.9rem;
@@ -246,7 +238,7 @@
   }
   
   .bottom-bar a {
-    color: #1e88e5; /* Link color */
+    color: #1e88e5; 
     text-decoration: none;
     font-weight: 500;
   }
@@ -256,8 +248,6 @@
   }
 
 
-
-  
   /* Dark Theme */
   body.dark-theme {
     background-color: #121212;
@@ -269,7 +259,7 @@
   }
 
   body.dark-theme .navbar .logo {
-    color: #00E5FF; /* Bright teal for dark mode */
+    color: #00E5FF; 
   }
   
   body.dark-theme .header-buttons button {
@@ -288,12 +278,12 @@
   }  
 
   body.dark-theme .search-form button {
-    background-color: #00E5FF; /* Bright teal for dark theme */
-    color: #121212; /* Dark text for contrast */
+    background-color: #00E5FF; 
+    color: #121212;
   }
   
   body.dark-theme .search-form button:hover {
-    background-color: #00B8D4; /* Darker teal on hover */
+    background-color: #00B8D4; 
   }
 
   body.dark-theme #search-results .result-item {
@@ -330,12 +320,12 @@
   }
 
   body.dark-theme .bottom-bar {
-    background-color: #141414; /* Dark theme background */
-    color: #fff; /* Dark theme text color */
+    background-color: #141414; 
+    color: #fff; 
   }
   
   body.dark-theme .bottom-bar a {
-    color: #00e5ff; /* Link color in dark theme */
+    color: #00e5ff; 
   }
   
   
