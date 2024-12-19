@@ -120,7 +120,7 @@ async function displayRecommendations() {
   });
 }
 
-// Event Listener for Refresh Button
+ // Event Listener for Refresh Button
 refreshRecommendationsBtn.addEventListener("click", displayRecommendations);
 
 // Load Recommendations on Page Load
