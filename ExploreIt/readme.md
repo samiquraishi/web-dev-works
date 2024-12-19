@@ -39,5 +39,3 @@ A lightweight and interactive web application for exploring Wikipedia content. I
 - Inspired by the idea of creating accessible and interactive web tools.
 
 ---
-
-Feel free to modify the content to include your repository name, screenshots, and future updates. Let me know if you'd like help with any specific sections!
